@@ -45,6 +45,7 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  margin: 0 auto;
 }
 
 nav ul li a {
@@ -109,7 +110,12 @@ main {
 }
 
 main .description {
-  width: 35rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+  margin-right: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,8 +190,11 @@ main .description .buttons .button2 {
 }
 
 main .image {
-  width: 35rem;
-  height: 23rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
 }
 
 main .image img {
@@ -214,7 +223,11 @@ main .image img {
 
 .cards .black-carts {
   color: white;
-  width: 36rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 20rem;
+      flex-basis: 20rem;
   height: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,7 +243,12 @@ main .image img {
 
 .cards .black-carts .black-left,
 .cards .black-carts .black-right {
-  width: 15rem;
+  margin-right: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 8rem;
+      flex-basis: 8rem;
   min-height: 12vh;
   padding: 1rem;
   background-color: black;
@@ -257,9 +275,13 @@ main .image img {
 }
 
 .cards .yellow-carts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 20rem;
+      flex-basis: 20rem;
   background-color: #fbfe27;
   color: black;
-  width: 36rem;
   min-height: 12vh;
   margin-top: 2rem;
   display: -webkit-box;
@@ -286,6 +308,11 @@ main .image img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 8rem;
+      flex-basis: 8rem;
 }
 
 .cards .yellow-carts .yellow-left .number {
@@ -297,6 +324,11 @@ main .image img {
 }
 
 .cards .yellow-carts .yellow-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 8rem;
+      flex-basis: 8rem;
   padding: 1rem;
   min-height: 12vh;
   display: -webkit-box;
@@ -321,7 +353,7 @@ main .image img {
 }
 
 .cards .yellow-carts .yellow-right .progress-bar {
-  width: 15rem;
+  width: 80%;
   height: 0.3rem;
   background-color: white;
   border-radius: 1rem;
@@ -338,5 +370,30 @@ main .image img {
   height: 0.3rem;
   background-color: black;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 924px) {
+  nav ul {
+    display: none;
+  }
+  main .description {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+  }
+  main .description .title h2 {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+  }
+  main .description p {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .yellow-right span {
+    margin-bottom: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
