@@ -88,13 +88,18 @@ nav .right .burger span {
   background-color: black;
   display: block;
   width: 2rem;
-  height: 0.3rem;
+  height: 0.2rem;
   border-radius: 0.5rem;
   margin-left: 4rem;
 }
 
 nav .right .burger span:first-child {
   margin-bottom: 0.3rem;
+}
+
+nav .right .burger span:last-child {
+  width: 1.5rem;
+  margin-left: auto;
 }
 
 .main1 {
